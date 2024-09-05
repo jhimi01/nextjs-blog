@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -36,7 +34,7 @@ export default function Home() {
     WebkitTextStrokeColor: "#666",
   };
 
-  const images = [img1, img2, img3, img4, img5, img6, img7];
+  // const images = [img1, img2, img3, img4, img5, img6, img7];
 
   return (
     <div className="custom-width ">

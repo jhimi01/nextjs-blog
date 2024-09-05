@@ -1,13 +1,8 @@
 "use client";
 import { FaCloudMoon } from "react-icons/fa";
 import Links from "./links/Links";
-// import { useRouter } from "next/router";
 
 export default function Navbar() {
-//   const router = useRouter();
-//   const handleInputClick = () => {
-//     router.push("/blogs");
-//   };
 
   return (
     <div
@@ -21,64 +16,12 @@ export default function Navbar() {
             type="text"
             className="input-style"
             placeholder="search..."
-            // onClick={handleInputClick}
           />
-          {/* <button
-            // onClick={toggleTheme}
-            className={`text-3xl`}
-          >
-            <FaCloudMoon />
-          </button> */}
+        
         </div>
         <div>
             <nav>
               <Links />
-              {/* <ul
-                className={`flex flex-wrap md:gap-6 sm:gap-3 gap-1 text-xl`}
-              >
-                <li>
-                  <Link
-                    className={`link ${pathname === "/" ? "active" : ""}`}
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`link ${pathname === "/about" ? "active" : ""}`}
-                    href="/about"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blogs"
-                    className={`link ${pathname === "/blogs" ? "active" : ""}`}
-                  >
-                    Blogs
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className={`link ${
-                      pathname === "/contact" ? "active" : ""
-                    }`}
-                  >
-                    contact
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/faq"
-                    className={`link ${pathname === "/faq" ? "active" : ""}`}
-                  >
-                    FAQ
-                  </Link>
-                </li>
-              </ul> */}
             </nav>
         </div>
       </div>
@@ -86,10 +29,3 @@ export default function Navbar() {
   );
 }
 
-{
-  /* <a><BsFacebook /></a>
-<a><AiOutlineTwitter /></a>
-<a><BsYoutube /></a>
-<a><AiFillInstagram /></a>
-<a><IoLogoWhatsapp /></a> */
-}

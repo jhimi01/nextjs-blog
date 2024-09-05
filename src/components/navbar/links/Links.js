@@ -7,7 +7,7 @@ export default function Links() {
 
     const links = [
         {
-            title: "home",
+            title: "Home",
             path: "/"
         },
         {

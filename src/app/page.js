@@ -20,10 +20,16 @@ import Review from "@/components/review/Review";
 import Subscription from "@/components/subscription/Subscription";
 import DemoBlogs from "@/components/demoblogs/DemoBlogs";
 
-// import AOS from "aos";
-// import "aos/dist/aos.css"; // Import the AOS CSS file
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS file
+import { useEffect } from "react";
 
 export default function Home() {
+
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const style = {
     WebkitTextFillColor: "transparent",
     WebkitTextStrokeWidth: "1px",

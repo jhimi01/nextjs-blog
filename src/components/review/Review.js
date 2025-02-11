@@ -50,8 +50,13 @@ export default function Review() {
         readers feedback
       </h1>
       <Swiper
-        slidesPerView={3}
+        // slidesPerView={3}
         spaceBetween={15}
+        breakpoints={{
+          640: { slidesPerView: 1.5, spaceBetween: 15 }, // For small screens
+          768: { slidesPerView: 2, spaceBetween: 20 }, // For medium screens
+          1024: { slidesPerView: 3, spaceBetween: 30 }, // For large screens
+        }}
         pagination={{
           clickable: true,
         }}

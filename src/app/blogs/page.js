@@ -73,7 +73,7 @@ export default function Blogs() {
 
   return (
     <div className='custom-width my-20'>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-8">
         {travelblog.map((blogData) => (
          <Link key={blogData.id} href={`/blogs/${blogData.id}`}><div className="bg-white rounded-lg overflow-hidden shadow-lg">
          <div className="relative h-64">

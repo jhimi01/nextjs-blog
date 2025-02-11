@@ -1,18 +1,8 @@
 "use client";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay } from "swiper/modules";
-import img1 from "/public/images/img (1).jpg";
-import img2 from "/public/images/img (2).jpg";
-import img3 from "/public/images/img (3).jpg";
-import img4 from "/public/images/img (4).jpg";
-import img5 from "/public/images/img (5).jpg";
-import img6 from "/public/images/img (6).jpg";
-import img7 from "/public/images/img (7).jpg";
 import ParallaxCompo from "../components/parallax";
 import Review from "@/components/review/Review";
 import Subscription from "@/components/subscription/Subscription";
@@ -33,8 +23,6 @@ export default function Home() {
     WebkitTextStrokeWidth: "1px",
     WebkitTextStrokeColor: "#666",
   };
-
-  // const images = [img1, img2, img3, img4, img5, img6, img7];
 
   return (
     <div className="custom-width ">

@@ -3,8 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
-
-const poppins = Poppins({weight: '400', subsets: ["latin"] });
+const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Venture",
@@ -14,16 +13,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <head>
-          <link rel="icon" href="/favicon.ico" />
-          {/* Add additional icon sizes for better compatibility */}
-          <link rel="icon" type="image/png" href="/logo.png" />
-        </head>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        {/* Add additional icon sizes for better compatibility */}
+        <link rel="icon" type="image/png" href="/logo.png" />
+      </head>
       <body className={poppins.className}>
-      <Navbar />
+        <Navbar />
+        <main className="px-5 md:px-0">
         {children}
+        </main>
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }

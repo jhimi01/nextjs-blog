@@ -2,26 +2,22 @@ import Buttoncustom from "../custombutton/Button";
 
 export default function Subscription() {
   return (
-    <div className="pt-10 pb-20 text-center my-20 space-y-2 bg-[#7cadd87d] text-[#333]">
-      <h1 className="text-4xl">
+    <div className="pt-10 relative pb-24 md:pb-40 text-center my-20 space-y-2 bg-[#7cadd87d] text-[#333]">
+      <h1 className="text-2xl md:text-4xl px-3 md:px-0">
         Newsletter - Stay tune and get the latest update
       </h1>
-      <h4 className="text-2xl">Far far away, behind the word mountains</h4>
-      <div className="relative flex items-center ">
-        <label className="relative focus-within:text-transparent cursor-text left-[430px] font-semibold text-xl top-4">
+      <h4 className="text-xl md:text-2xl">Far far away, behind the word mountains</h4>
+      <div className="md:absolute md:px-0 justify-center flex items-center ">
+        <label className="md:absolute border-2 border-black  cursor-text md:left-[430px] font-semibold text-xl top-4">
           <input
             type="email"
-            className="bg-transparent  text-white focus:outline-none border-2 border-black py-5 pl-5 pr-16"
+            placeholder="Enter email address"
+            className="bg-transparent placeholder:capitalize placeholder:text-[#333]  text-white focus:outline-none  py-5 pl-5 pr-16"
           />
-
-          <span className="absolute left-2 top-5 px-1 capitalize tracking-wide">
-            Enter email address
-          </span>
-        <div className="absolute top-4 -right-14 ">
-          <Buttoncustom text="subscribe" />
-        </div>
+          <div className="absolute hidden md:block top-4 -right-14 ">
+            <Buttoncustom text="subscribe" />
+          </div>
         </label>
-
       </div>
     </div>
   );
